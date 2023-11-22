@@ -17,5 +17,5 @@ const close = function(){
     modal.classList.add(`hidden`);
     overLay.classList.add(`hidden`);
 }
-closeModal.addEventListener(`click`, close);
+closeModal.addEventListener(`click`, close);//we don't write closeModal.addEventListener(`click`, close()); because JS will execute the function immediately before the click event happen
 overLay.addEventListener(`click`, close);
