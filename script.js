@@ -9,5 +9,13 @@ for(let i = 0; i < showModal.length; i++){
         overLay.classList.remove(`hidden`);
     })
 }
+/*
  closeModal.addEventListener(`click`,() => {modal.classList.add(`hidden`);
  overLay.classList.add(`hidden`);});
+ */
+const close = function(){
+    modal.classList.add(`hidden`);
+    overLay.classList.add(`hidden`);
+}
+closeModal.addEventListener(`click`, close);
+overLay.addEventListener(`click`, close);
